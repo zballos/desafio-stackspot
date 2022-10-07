@@ -1,0 +1,33 @@
+name: novo-projeto-web
+description: Novo projeto spring
+types:
+  - app-template
+inputs:
+  - label: Versão Spring Boot
+    type: text
+    name: spring_boot_version
+    default: 2.7.4
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+  - label: Group Id
+    type: text
+    name: group_id
+  - label: Artifact Id
+    type: text
+    name: artifact_id
+  - label: Versão
+    type: text
+    name: version
+    default: 0.0.1-SNAPSHOT
+  - label: Nome do Projeto
+    type: text
+    name: nome_projeto
+  - label: Descrição
+    type: text
+    name: descricao
+
+computedInputs:
+  "pacote_base": "{{inputs.group_id}}.{{inputs.artifact_id}}"
+  "pasta": "{{computed_inputs.pacote_base | replace('.', '/')}}"
