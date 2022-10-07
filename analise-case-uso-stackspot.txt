@@ -1,0 +1,33 @@
+Análise
+
+1. Poderá ser uzado Java com Spring Boot para criar API's.
+2. Poderá ser uzado Java com Micronaut para criar API's.
+3. Poderá ser usado ASP.NET Core + C# para frontend.
+4. Poderá ser usado NextJS para frontend com React e para construção de BFF's.
+5. Existe a necessidade de reaproveitar código, sempre que necessário criar um novo projeto. Caracteriza-se a criação de templates
+6. Existe a necessidade de replicar o conhecimento, através de uma documentação.
+7. Quando possui padrão de codigo, como Clean Architecture, o mesmo deve ser padronizado para que possa ser compartilhado internamente e entre outras equipes. Trata-se da criação do template padronizado.
+8. Parametrizar as conexões com banco de dados, no caso o postgres.
+9. Reaproveitar as configurações necessárias para conectar ao Kafka.
+10. Configurar infraestrutura padrão para novos projetos de backend e frontend.
+
+Templates
+1. Estrutura básica de projeto com padrão clean architecture usando Java + Spring Boot numa versão X, com namespacce, nome e descrição.
+2. Estrutura básica de projeto com padrão clean architecture Java com Micronaut, recebendo como parametro o namespace, nome e descricao.
+3. Estrutura para criar frontends com NextJS e React.
+4. Estrutura para criar BFFs com NextJS.
+
+Plugins
+1. Facilitar conexão com postgress ao template Java. Estudar Spring JPA. É aplicavel com Micronaut? Precisa dos parametros principais como url, usuario e senha.
+2. Facilitar a conexão com Kafka, criando assim uma comunicação default, aplicando a um template. Precisará de parametros do Kafka.
+3. Automatizar a geração de código para que possa publicar ou subscrever tópicos do kafka, dentro do padrão clean architecture, em Java.
+4. Facilitar a configuração inicial com Redis, como base de cache, em Java. Incluindo recursos necessários com funções para escrever e obter dados publicados no redis a partir de uma chave.
+5. Facilitar a configuração de autorizacao e autenticação, em java, utilizando Spring Security, por exemplo. 
+6. Facilitar a configuração e utilização do SNS da AWS, em projeto Java. Precisa de propriedades de conexão, biblioteca da AWS, classe ou métodos que padronizem a comunicação com os tópicos.
+7. Configuração de plugin AWS para Java
+8. Automação para criar arquivos yml e dockerfiles para configuração da infra. Definir imagens, versões, variaveis de ambiente.
+
+Stackfiles
+1. Template 1 (Java + Spring Boot) + Plugin 1 (Spring JPA) + Plugin 5 (Spring Security)
+2. Template 1 + Plugin 3 (Kafka)
+3. 
