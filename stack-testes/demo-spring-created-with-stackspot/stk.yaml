@@ -1,0 +1,13 @@
+applied_templates:
+- inputs:
+    artifact_id: demo
+    descricao: Demo criada com template spring via StackSpot
+    group_id: br.com.zballos
+    nome_projeto: app-spring
+    project_name: demo-spring-created-with-stackspot
+    spring_boot_version: 2.7.4
+    version: 0.0.1-SNAPSHOT
+  template_data_path: stack-demo-spring/novo-projeto-web
+global_computed_inputs: {}
+global_inputs: {}
+stack_type: app
