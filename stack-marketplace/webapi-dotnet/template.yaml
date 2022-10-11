@@ -1,0 +1,26 @@
+name: webapi-dotnet
+description: API em dotnet
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+  - label: Descrição
+    type: text
+    name: descricao
+  - label: Nome projeto
+    type: text
+    name: nome_projeto
+  - label: Root Namespace
+    type: text
+    name: root_namespace
+
+hooks:
+  - type: run
+    trigger: after-render
+    working-dir: "{{nome_projeto}}"
+    commands:
+      - "ls -la"
+      - "dotnet build"

@@ -1,0 +1,8 @@
+Templates
+
+- webapi-dotnet 
+    Stack: WEB API .NET 6 para API
+    Inputs: Nome Projeto, Descricao, Namespace default
+    Hooks: Criei um comando para executar o build apos renderizar o projeto.
+
+
