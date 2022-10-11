@@ -1,0 +1,8 @@
+applied_templates:
+- inputs:
+    descricao: aaa
+    project_name: demo-nextjs
+  template_data_path: stack-marketplace/webapp-nextjs
+global_computed_inputs: {}
+global_inputs: {}
+stack_type: app
