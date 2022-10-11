@@ -5,4 +5,9 @@ Templates
     Inputs: Nome Projeto, Descricao, Namespace default
     Hooks: Criei um comando para executar o build apos renderizar o projeto.
 
+- webapp-nextjs
+    Stack: WEB App usando nextjs baseado em typescript
+    Inputs: Nome Projeto, Descricao
+    Hooks: Criei vários comandos, focando em ter um template que utilize comandos de criação de projeto pelo nextjs.
+        Após os comandos de criados, executados no before-render, executei comandos de compilação na trigger after-render.
 
