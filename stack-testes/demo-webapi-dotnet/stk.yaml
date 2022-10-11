@@ -1,0 +1,10 @@
+applied_templates:
+- inputs:
+    descricao: Demo .NET 6
+    nome_projeto: demo-api-dotnet
+    project_name: demo-webapi-dotnet
+    root_namespace: demo_api
+  template_data_path: stack-marketplace/webapi-dotnet
+global_computed_inputs: {}
+global_inputs: {}
+stack_type: app
