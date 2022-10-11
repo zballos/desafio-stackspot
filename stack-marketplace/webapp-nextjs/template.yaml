@@ -1,0 +1,35 @@
+name: webapp-nextjs
+description: Webapp em nextjs
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+  - label: Descrição
+    type: text
+    name: descricao
+hooks:
+  - type: run
+    trigger: before-render
+    working-dir: "."
+    linux: 
+      - "ls -la"
+      - "npm install -g create-next-app@latest"
+      - "create-next-app {{inputs.project_name}} --ts --use-npm" 
+    windows:
+      - "cmd /c ls -la"
+      - "cmd /c npm install -g create-next-app@latest"
+      - "cmd /c create-next-app {{inputs.project_name}} --ts --use-npm"
+  - type: run
+    trigger: after-render
+    working-dir: "{{inputs.project_name}}"
+    linux:
+      - "ls -la"
+      - "npm run build"
+      - "npm run lint"
+    windows:
+      - "cmd /c ls -la"
+      - "cmd /c npm run build"
+      - "cmd /c npm run lint"
